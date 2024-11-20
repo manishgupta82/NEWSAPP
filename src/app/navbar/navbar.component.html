@@ -1,51 +1,55 @@
-<nav class="navbar navbar-expand-lg nav-background-color-blue-navy">
-    <div class="container-fluid">
-      <a class="navbar-brand text-light" routerLink="/" >NEWSAPP</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active text-light" aria-current="page" [routerLink]="['/']" [queryParams]="{q : 'All'}">ALL</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-light" [routerLink]="['/']" [queryParams]="{q:'Politics'}">Politics</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-light" [routerLink]="['/']" [queryParams]="{q:'Crime'}">Crime</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-light" [routerLink]="['/']" [queryParams]="{q:'Education'}">Education</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-light" [routerLink]="['/']" [queryParams]="{q:'Entertainment'}">Entertainment</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-light" [routerLink]="['/']" [queryParams]="{q:'Science'}">Science</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-light" [routerLink]="['/']" [queryParams]="{q:'Technology'}">Technology</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Sports
-            </a>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item" [routerLink]="['/']" [queryParams]="{q: 'Olympics'}">Olympics</a></li>
-              <li><a class="dropdown-item" [routerLink]="['/']" [queryParams]="{q: 'Cricket'}">Cricket</a></li>
-              <li><a class="dropdown-item" [routerLink]="['/']" [queryParams]="{q: 'Football'}">Football</a></li>
-              <li><a class="dropdown-item" [routerLink]="['/']" [queryParams]="{q: 'Volleyball'}">Volleyball</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-          </li>
-        </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-light" type="submit">Search</button>
-        </form>
-      </div>
+<nav class="navbar navbar-expand-lg background">
+  <div class="container-fluid">
+    <a class="navbar-brand text-light" routerLink="/">NEWSAPP</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active text-light" aria-current="page" [routerLink]="['/']"
+            [queryParams]="{q : 'All'}">ALL</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" [routerLink]="['/']" [queryParams]="{q:'Politics'}">Politics</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" [routerLink]="['/']" [queryParams]="{q:'Crime'}">Crime</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" [routerLink]="['/']" [queryParams]="{q:'Education'}">Education</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" [routerLink]="['/']" [queryParams]="{q:'Entertainment'}">Entertainment</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" [routerLink]="['/']" [queryParams]="{q:'Science'}">Science</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" [routerLink]="['/']" [queryParams]="{q:'Technology'}">Technology</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Other
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" [routerLink]="['/']" [queryParams]="{q: 'Olympics'}">Olympics</a></li>
+            <li><a class="dropdown-item" [routerLink]="['/']" [queryParams]="{q: 'Cricket'}">Cricket</a></li>
+            <li><a class="dropdown-item" [routerLink]="['/']" [queryParams]="{q: 'Football'}">Football</a></li>
+            <li><a class="dropdown-item" [routerLink]="['/']" [queryParams]="{q: 'Volleyball'}">Volleyball</a></li>
+            <li><a class="dropdown-item" [routerLink]="['/']" [queryParams]="{q: 'India'}">India</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-light" type="submit">Search</button>
+      </form>
     </div>
-  </nav>
+  </div>
+</nav>
